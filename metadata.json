@@ -3,9 +3,7 @@
   "description": "Shows Nvidia GPU Temperature. Uses nvidia-smi or nvidia-settings as default, if available.", 
   "name": "Nvidia GPU Temperature Indicator", 
   "shell-version": [
-    "3.2", 
-    "3.4", 
-    "3.6"
+    "3.10"
   ], 
   "url": "http://www.bacox.com.ar/", 
   "uuid": "nvidiatemp@baco", 
