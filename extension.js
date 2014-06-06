@@ -32,10 +32,10 @@ function NvidiaTemperature() {
 }
 
 NvidiaTemperature.prototype = {
-    __proto__: PanelMenu.SystemStatusButton.prototype,
+    __proto__: PanelMenu.Button.prototype,
 
     _init: function(){
-        PanelMenu.SystemStatusButton.prototype._init.call(this, 'nvidiatemp');
+        PanelMenu.Button.prototype._init.call(this, 'nvidiatemp');
 
         // Set Logo
         var theme = imports.gi.Gtk.IconTheme.get_default();
@@ -166,7 +166,7 @@ NvidiaTemperature.prototype = {
             let item;
             for each (let itemText in items){
                 item = new PopupMenu.PopupMenuItem("", { reactive: false });
-                item.addActor(new St.Label({
+                item.actor.add(new St.Label({
                     text:itemText,
                     style_class: "sm-label"
                 }));
@@ -176,7 +176,7 @@ NvidiaTemperature.prototype = {
             let command=this.command;
             let item;
             item = new PopupMenu.PopupMenuItem("");
-            item.addActor(new St.Label({
+            item.actor.add(new St.Label({
                 text:this.content,
                 style_class: "sm-label"
             }));
@@ -191,7 +191,7 @@ NvidiaTemperature.prototype = {
 //    _createSectionForText: function(txt){
 //        let section = new PopupMenu.PopupMenuSection("GPU Temperature");
 //        let item = new PopupMenu.PopupMenuItem("");
-//        item.addActor(new St.Label({
+//        item.actor.add(new St.Label({
 //            text:txt,
 //            style_class: "sm-label"
 //        }));

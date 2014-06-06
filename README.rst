@@ -1,8 +1,8 @@
 Nvidia Temp
 ===========
 
-Nvidia Temp is a Gnome Shell Extension that reports current temperature for
-Nvidia cards.
+Nvidia Temp is a Gnome Shell (3.10) Extension that reports current temperature
+for Nvidia cards.
 
 Currently it only reports temperature in Celsius degrees.
 
